@@ -34,11 +34,11 @@ def menu():
 
         if pilihan == "1":
             loading_animation()
-            subprocess.run(["xdg-open", "https://omcyber.com/cara-menggunakan-termux/"])
+            subprocess.run(["xdg-open", "https://www.omcyber.net/"])
             os.system("clear")
         elif pilihan == "2":
             loading_animation()
-            subprocess.run(["xdg-open", "https://www.youtube.com/@AriefV"])
+            subprocess.run(["xdg-open", "https://www.youtube.com/"])
             os.system("clear")
         elif pilihan == "3":
             print(KUNING + "Sampai jumpa kembali!" + RESET)
@@ -47,5 +47,6 @@ def menu():
             print(MERAH + "Pilihan tidak valid. Silakan coba lagi." + RESET)
 
 if __name__ == "__main__":
+    os.system("clear")  # Tambahkan baris ini di awal
     sambutan()
     menu()
