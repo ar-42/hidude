@@ -10,11 +10,11 @@ BIRU = "\033[94m"
 RESET = "\033[0m"
 
 def loading_animation():
-    print(KUNING + "Memuat..." + RESET, end="")
-    for _ in range(3):
-        print(KUNING + "." + RESET, end="", flush=True)
-        time.sleep(0.5)
-    print("\n")
+    putar = ['|', '/', '-', '\\']
+    for i in range(20):  # Ubah jumlah iterasi untuk durasi animasi
+        print(KUNING + "\rMemuat " + putar[i % len(putar)] + RESET, end="")
+        time.sleep(0.1)  # Ubah kecepatan animasi
+    print("\r") # Membuat baris baru setelah animasi selesai
 
 def sambutan():
     print(BIRU + "Selamat datang pengunjung situs OmCyber!" + RESET)
@@ -47,6 +47,6 @@ def menu():
             print(MERAH + "Pilihan tidak valid. Silakan coba lagi." + RESET)
 
 if __name__ == "__main__":
-    os.system("clear")  # Tambahkan baris ini di awal
+    os.system("clear")
     sambutan()
     menu()
