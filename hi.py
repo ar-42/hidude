@@ -34,11 +34,11 @@ def menu():
 
         if pilihan == "1":
             loading_animation()
-            subprocess.run(["xdg-open", "https://www.omcyber.net/"])
+            subprocess.run(["xdg-open", "https://omcyber.com/cara-menggunakan-termux/"])
             os.system("clear")
         elif pilihan == "2":
             loading_animation()
-            subprocess.run(["xdg-open", "https://www.youtube.com/"])
+            subprocess.run(["xdg-open", "https://www.youtube.com/@AriefV"])
             os.system("clear")
         elif pilihan == "3":
             print(KUNING + "Sampai jumpa kembali!" + RESET)
