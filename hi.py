@@ -1,4 +1,4 @@
-import webbrowser
+import subprocess
 
 def sambutan():
     print("Selamat datang pengunjung situs OmCyber!")
@@ -15,9 +15,9 @@ def menu():
         pilihan = input("Masukkan pilihan Anda (1/2/3): ")
 
         if pilihan == "1":
-            webbrowser.open("https://www.omcyber.net/")
+            subprocess.run(["xdg-open", "https://www.omcyber.net/"])
         elif pilihan == "2":
-            webbrowser.open("https://www.youtube.com/")
+            subprocess.run(["xdg-open", "https://www.youtube.com/"])
         elif pilihan == "3":
             print("Sampai jumpa kembali!")
             break
